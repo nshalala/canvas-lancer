@@ -36,6 +36,17 @@ a.button {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
+  transition: all 1s;
+}
+a.button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.perfect-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -184,14 +195,14 @@ header nav .nav__contact {
   font: normal 700 16px "Poppins", sans-serif;
   line-height: 155%;
   letter-spacing: 0.03em;
-  color: #F8F8F8;
+  color: #f8f8f8;
 }
 .sec3__row--text h5 span {
   color: #ff3839;
   font-weight: 700;
 }
 .sec3__row--text h1 {
-  color: #F8F8F8;
+  color: #f8f8f8;
   margin: 10px 0 20px;
 }
 .sec3__row--text p {
@@ -228,7 +239,7 @@ header nav .nav__contact {
   top: -41px;
   left: 50%;
   transform: translateX(-50%);
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   background-color: #ff3839;
 }
@@ -273,7 +284,7 @@ header nav .nav__contact {
   justify-content: center;
   align-items: center;
   padding: 10px 25px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 5px;
   font: normal 400 16px "Poppins", sans-serif;
   line-height: 24px;
@@ -303,14 +314,14 @@ header nav .nav__contact {
   line-height: 155%;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 .sec5__row h5 span {
   color: #ff3839;
   font-weight: 700;
 }
 .sec5__row h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 19px 0 70px;
 }
 .sec5__row .feedbacks {
@@ -327,16 +338,16 @@ header nav .nav__contact {
   gap: 15px;
   max-width: 370px;
   padding: 0 18px 18px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5px;
   position: relative;
 }
 .sec5__row .feedbacks .feedback .quote {
   width: 100px;
   height: 100px;
-  background: #FF3839;
+  background: #ff3839;
   border-radius: 50%;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   position: absolute;
   top: -50px;
   display: flex;
@@ -346,7 +357,7 @@ header nav .nav__contact {
   line-height: 155%;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFF;
+  color: #fff;
 }
 .sec5__row .feedbacks .feedback h6 {
   font: normal 700 16px "Poppins", sans-serif;
@@ -378,7 +389,7 @@ header nav .nav__contact {
   margin: 24px 0 75px;
 }
 .sec6__row .accordion .faq {
-  background: #F1F1F1;
+  background: #f1f1f1;
   border-radius: 5px;
   font: normal 400 16px "Poppins", sans-serif;
   line-height: 24px;
@@ -397,7 +408,7 @@ header nav .nav__contact {
 }
 
 .sec7 {
-  background: #F1F1F1;
+  background: #f1f1f1;
 }
 .sec7__row {
   display: flex;
@@ -410,7 +421,7 @@ header nav .nav__contact {
   font: normal 700 16px "Poppins", sans-serif;
   line-height: 155%;
   letter-spacing: 0.03em;
-  color: #FF3839;
+  color: #ff3839;
 }
 .sec7__row .form h1 {
   margin: 19px 0 31px;
@@ -429,7 +440,8 @@ header nav .nav__contact {
   gap: 23px;
   align-items: start;
 }
-.sec7__row .form form input, .sec7__row .form form textarea {
+.sec7__row .form form input,
+.sec7__row .form form textarea {
   width: 100%;
   padding: 17px 21px;
   font: normal 400 16px "Poppins", sans-serif;
@@ -444,6 +456,75 @@ header nav .nav__contact {
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
   width: 100%;
+}
+
+footer {
+  background-color: #202020;
+}
+footer .row1 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+footer .row1 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 40px 0;
+}
+footer .row1 .container .details {
+  text-align: center;
+}
+footer .row1 .container .details p {
+  font: normal 400 13px "Poppins", sans-serif;
+  line-height: 155%;
+  text-align: justify;
+  letter-spacing: 0.03em;
+  color: #f8f8f8;
+  margin: 40px 0 15px;
+}
+footer .row1 .container .details .icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+footer .row1 .container .details .icons .icon {
+  background-color: #ff3839;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+footer .row1 .container .details h6 {
+  font: normal 700 20px "Poppins", sans-serif;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+footer .row1 .container .details ul {
+  list-style-type: none;
+}
+footer .row1 .container .details ul li a {
+  font: normal 300 14px "Poppins", sans-serif;
+  line-height: 41px;
+  color: #ffffff;
+}
+footer .row2 .container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  gap: 30px;
+  text-align: center;
+  font: normal 300 16px "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 24px;
+}
+footer .row2 .container ul {
+  list-style-type: none;
+}
+footer .row2 .container ul li a {
+  line-height: 36px;
+  text-decoration-line: underline;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 576px) {
@@ -565,6 +646,25 @@ header nav .nav__contact {
   .sec7__row .form {
     width: 80%;
   }
+  footer .row1 .container {
+    flex-wrap: nowrap;
+    gap: 40px;
+    align-items: start;
+  }
+  footer .row1 .container .details {
+    width: 25%;
+  }
+  footer .row1 .container .details .icons {
+    justify-content: start;
+  }
+  footer .row2 .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .row2 .container ul {
+    display: flex;
+    gap: 20px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .container {
@@ -603,5 +703,9 @@ header nav .nav__contact {
   }
   .sec4__row .categories {
     margin: 47px 0 50px;
+  }
+  footer .row1 .container,
+  footer .row2 .container {
+    padding: 30px 40px;
   }
 }/*# sourceMappingURL=style.css.map */
