@@ -62,6 +62,15 @@ header nav {
 header nav .nav__burger {
   color: #fff;
   font-size: 23px;
+  cursor: pointer;
+}
+header nav .nav__burger::before {
+  content: "\f0c9";
+  font-family: FontAwesome;
+}
+header nav .nav__burger.active::before {
+  content: "\f00d";
+  font-family: FontAwesome;
 }
 header nav .nav__logo {
   display: flex;
@@ -76,6 +85,35 @@ header nav .nav__logo span {
 }
 header nav .nav__menu {
   display: none;
+  background: #202020;
+  list-style-type: none;
+}
+header nav .nav__menu.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  width: 100%;
+  padding: 30px;
+  left: 0;
+  top: 80px;
+}
+header nav .nav__menu.active li {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+header nav .nav__menu.active li.active, header nav .nav__menu.active li:hover {
+  background-color: #ff3839;
+}
+header nav .nav__menu.active li a {
+  font: normal 400 18px "Poppins", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
 }
 header nav .nav__contact {
   background: #ff3839;

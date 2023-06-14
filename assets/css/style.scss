@@ -68,6 +68,15 @@ header {
             &__burger {
                 color: #fff;
                 font-size: 23px;
+                cursor: pointer;
+                &::before{
+                    content: '\f0c9';
+                    font-family: FontAwesome;
+                }
+                &.active::before{
+                    content: '\f00d';
+                    font-family: FontAwesome;
+                }
             }
             &__logo {
                 display: flex;
@@ -82,6 +91,36 @@ header {
             }
             &__menu {
                 display: none;
+                background: #202020;
+                list-style-type: none;
+                &.active {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 20px;
+                    position: absolute;
+                    width: 100%;
+                    padding: 30px;
+                    left: 0;
+                    top: 80px; 
+                    li {
+                        width: 100%;
+                        padding: 10px;
+                        text-align: center;
+                        cursor: pointer;
+                        &.active,
+                        &:hover {
+                            background-color: $c-red;
+                        }
+                        a {
+                            font: normal 400 18px $f-Poppins;
+                            line-height: 24px;
+                            letter-spacing: 0.03em;
+                            color: #fff;
+                        }
+                    }
+                }
             }
             &__contact {
                 background: $c-red;
